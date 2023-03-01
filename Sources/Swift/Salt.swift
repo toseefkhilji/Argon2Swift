@@ -33,3 +33,10 @@ public class Salt {
         return Salt(bytes: Data(bytes))
     }
 }
+
+extension Salt {
+    /// Salt bytes to store data
+    public var saltBytes: Data {
+        return bytes
+    }
+}
